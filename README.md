@@ -1,0 +1,1 @@
+# testovoie_zadanie_schneider
