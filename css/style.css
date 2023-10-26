@@ -1,0 +1,327 @@
+/*Обнуление стилей*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top; /*выравнено по верху изображение, чтобы не было артефактного отступа*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+} /* Сбросили стиль заголовков - теперь они принимают на себя общий дизайн сайта */
+html,
+body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: "Open Sans"; 
+     
+}
+
+
+
+
+
+@media (max-width: 990px) {
+    body {
+        width: 1000px;
+    }
+}
+
+
+
+
+
+
+.cont {
+    min-height: 100vh; /* эта и две строки ниже (и footer {margin-top: auto}) - прижали footer к низу сайта */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /*это чтобы обрезался вылезающий контент (а когда контент выступает, появляется горизонтальный скролл). */
+}
+header {
+    width: 100%;
+    padding: 31px 0;
+    background-color: #dcdcdc;
+    
+}
+.header_container {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.header_content {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo {
+    width: 35%;
+    height: auto;
+    
+
+}
+.sale {
+   
+    width: 25%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 17px;
+    
+    color: #777777;
+
+}
+.tel {
+    display: block;
+    width: 35%;
+    font-size: 31px;
+    font-weight: 800;
+    color: #767676;
+    text-align: center;
+    line-height: 46pt;
+}
+.lower {
+    margin-top: -10px;
+    
+}
+.lower a {
+    color: #767676;
+}
+.upper a {
+    color: #767676; 
+}
+
+
+.top_menu {
+    width: 100%;
+    height: 60px;
+    background-color: #767676;
+    
+}
+.top_menu_container {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.menu_top {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu_top li {
+    
+    padding: 0 3%;
+    border-left: 2px solid #ffffff;
+
+}
+.menu_top li a {
+    color: #ffffff;
+}
+.menu_top :first-child {
+    border: none;
+}
+.menu_top li:hover {
+    text-decoration: underline;
+}
+
+
+
+.slider {
+    height: 404px;
+    width: 100%;
+    height: 50vh;
+    background: url(../img/slider.jpg) no-repeat;
+    background-position: center center;
+}
+
+
+
+
+.text {
+    background-color: #ffffff;
+    
+}
+.text_container {
+    
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    display: flex;
+    
+}
+
+.news {
+    background-color: #767676;
+    width: 35%;
+    color: #ffffff;
+    padding: 2% 0 0 0;
+}
+h2 {
+    padding-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "PT Sans";
+}
+.news p {
+    padding-left: 25px;
+    /*font-style: italic;*/
+    font-size: 14px;
+    /*font-weight: 200;*/
+
+}
+.news p span {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.arh {
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    bottom: 5%;
+    right: 5%;
+    text-align: right;
+
+}
+
+
+.about_company {
+    width: 55%;
+    position: relative;
+    left: 5%;
+    color: #767676;
+    padding: 2% 0 0 0;
+}
+
+
+h1 {
+    font-size: 33px;
+    
+}
+.company p {
+    padding-top: 3%;
+    font-size: 14px;
+}
+h3 {
+    font-size: 24px; 
+}
+
+
+
+
+
+
+.texts {
+    display: flex;
+    font-size: 14px;
+    
+}
+.text_1 {
+    width: 50%;
+    padding-right: 3%;
+}
+.text_2 {
+    padding-left: 3%;
+    width: 50%;
+}
+
+.texts span {
+    
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: auto;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #777777;
+    padding: 3% 0;
+}
+.footer_container {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_content a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
